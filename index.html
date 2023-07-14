@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e357df29df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/text-1687500538195.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certifications</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Computer Science Engineer</p>
+            <h2>Hi, I'm <span>Kamal Prasath</span><br> from India.</h2>
+        </div>
+    </div>
+<!------about-------------------->    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="C:\Users\Kamal\Desktop\portfolio\images\me.jpeg">
+                </div>
+                <div class="about-col2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I am passionate about Data Science and Cloud Computing. I am an aspiring and enthusiastic student, intrested in emerging technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Technical Skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('Soft Skills')">Soft Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>Under Graduate</span><br>Kumaraguru College of Technology</li>
+                            <li><span>Class 12</span><br>Vidyaa Vikas Matric Hr. Sec. School</li>
+                            <li><span>Class 10</span><br>Vivekam Matric Hr. Sec. School</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Technical Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, Python, Java.</li>
+                            <li><span>Front end development</span><br>HTML, CSS, Javascript.</li>
+                            <li><span>Database and Backend</span><br>MySql, MongoDB.</li>
+                            <li><span>Analytics</span><br>Jupyter notebook, Excel.</li>
+                            <li><span>Networking</span><br>Cisco, Wireshark.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Soft Skills">
+                        <ul>
+                            <li><span>Problem Solving</span><br>Ability to work and solve challenging problems.</li>
+                            <li><span>Creativity</span><br>Art and crafts.</li>
+                            <li><span>Communication</span><br>Profeciency in English.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-----------------------------certifications----------------------->   
+<div id="services">
+    <div class="container">
+        <h2 class="sub-title">Certifications</h2>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>MongoDB Basics(M001)</h3>
+                <p>Issued by MongoDB University on November 10,2022.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h3>AWS Academy Cloud Foundations</h3>
+                <p>Issues by AWS academy on March 6,2023.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-microsoft"></i>
+                <h3>Microsoft Azure AI Fundamentals</h3>
+                <p>Issues Microsoft Azure on December 12,2022.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------portfolio-------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">Projects</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="images\work1.jpg" width="400" height="300">
+                <div class="layer">
+                    <h3>Digital Crypto Market Place</h3>
+                    <p>This build allows users to sell and buy any digital asset using cryptocurrency in our decentralized.<br>
+                       And if they wish part of the revenue will be sent to a charity.</p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg" width="400" height="300">
+                <div class="layer">
+                    <h3>LIVE SMART</h3>
+                    <p>Home Automation Using IoT: 
+                       This app will provide remote control of home appliance.
+                       It is mainly concerned with the automatic control of light or any other home appliances using internet or wifi.</p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg" width="400" height="300">
+                <div class="layer">
+                    <h3>Movie Recommender System</h3>
+                    <p>This build recommends the top 5 movies that are similar to the movie you have entered. 
+                       Machine learning libraries like Sklearn, nltk are used for vectorizing and stemming the data. And a basic model is deployed.</p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-------------------------------------Contact------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> kamalprasath2003@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 6369974701</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kamal-prasath-b96376219/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kamalprassath30"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/20BCS046_Kamal Prasath T(2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright@Kamalprasath</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
